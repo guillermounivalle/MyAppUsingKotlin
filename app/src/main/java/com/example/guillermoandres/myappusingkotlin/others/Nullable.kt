@@ -48,7 +48,7 @@ class Nullable {
         variable2!!.length
     }
 
-    public fun showCases() {
+    fun showCases() {
         showCase1()
         showCase2("Pedro")
         showCase3()
