@@ -15,5 +15,6 @@ class MainActivity : AppCompatActivity() {
         Operators().showCases()
         ControlFlow().showcases()
         Classes().showCases()
+        Functions().showCases()
     }
 }
