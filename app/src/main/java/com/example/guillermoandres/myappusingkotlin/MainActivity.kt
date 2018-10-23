@@ -10,12 +10,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Variables().showCase()
+
+        /*
+        This classes are a learning of kotlin
+         */
+        //Variables().showCase()
         //Nullable().showCases()  ---> Solo usar para mostrar los posibles Nullpointer Exception
-        Operators().showCases()
-        ControlFlow().showcases()
-        Classes().showCases()
-        Functions().showCases()
-        CompanionObject().showCases()
+        //Operators().showCases()
+        //ControlFlow().showcases()
+        //Classes().showCases()
+        //Functions().showCases()
+        //CompanionObject().showCases()
     }
 }
