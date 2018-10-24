@@ -25,7 +25,8 @@
         <activity android:name=".Activities.PermissionsActivity" />
         <activity android:name=".Activities.SharedPreferences" />
         <activity android:name=".Activities.ExtensionsFunctions" />
-        <activity android:name=".Activities.LifeCyclesActivity"></activity>
+        <activity android:name=".Activities.LifeCyclesActivity" />
+        <activity android:name=".Activities.LifeCycleEventsActivity"></activity>
     </application>
 
 </manifest>
