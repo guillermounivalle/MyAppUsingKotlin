@@ -16,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activities.IntentActivity" />
+        <activity android:name=".Activities.ClickEventeActivity" />
+        <activity android:name=".Activities.AndroidExtensionsActivity" />
+        <activity android:name=".Activities.PicassoActivity" />
+        <activity android:name=".Activities.ListViewActivity" />
+        <activity android:name=".Activities.IntentsActivity" />
+        <activity android:name=".Activities.PermissionsActivity" />
+        <activity android:name=".Activities.SharedPreferences" />
+        <activity android:name=".Activities.ExtensionsFunctions" />
+        <activity android:name=".Activities.LifeCyclesActivity" />
+        <activity android:name=".Activities.LifeCycleEventsActivity"></activity>
     </application>
 
 </manifest>

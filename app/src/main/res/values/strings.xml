@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">MyAppUsingKotlin</string>
+    <string name="app_name">My AppUsing Kotlin</string>
+    <string name="button_to_cycle">1. Ciclo de evenetos</string>
+    <string name="button_to_click">2. Click para eventos</string>
+    <string name="button_to_android_extensions">3. Kotlin Android extensions</string>
+    <string name="button_to_picasso">4. Ir a picasso</string>
+    <string name="button_to_list_view">5. Ir a List View</string>
+    <string name="button_to_intents">6. Ir a intents</string>
+    <string name="button_to_permissions">7. Ir a permissions</string>
+    <string name="button_to_shared_preferences">8. Ir a Shared Preferences</string>
+    <string name="button_to_Extensions_functions">9. Irt a Extensions functions</string>
+
+
 </resources>
