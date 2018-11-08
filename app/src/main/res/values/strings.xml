@@ -14,5 +14,7 @@
     <string name="button_Multi_1">Botón Múltiple 1</string>
     <string name="button_Multi_2">Botón Múltiple 2</string>
     <string name="button_Multi_3">Botón Múltiple 3</string>
+    <string name="button_kat_id">BUTTON FINDVIEWBYID</string>
+    <string name="button_kat_kat">BUTTON BY KAT</string>
 
 </resources>
