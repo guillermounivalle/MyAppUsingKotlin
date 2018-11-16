@@ -16,5 +16,9 @@
     <string name="button_Multi_3">Botón Múltiple 3</string>
     <string name="button_kat_id">BUTTON FINDVIEWBYID</string>
     <string name="button_kat_kat">BUTTON BY KAT</string>
+    <string name="button_intent_extras">Intent With Extras</string>
+    <string name="button_intent_flags">Intent With Flags</string>
+    <string name="button_intent_object">Intent With Object</string>
+    <string name="button_back">Go Back</string>
 
 </resources>

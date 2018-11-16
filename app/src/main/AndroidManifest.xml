@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.guillermoandres.myappusingkotlin">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -28,7 +28,8 @@
         <activity android:name=".Activities.SharedPreferences" />
         <activity android:name=".Activities.ExtensionsFunctions" />
         <activity android:name=".Activities.LifeCyclesActivity" />
-        <activity android:name=".Activities.LifeCycleEventsActivity"></activity>
+        <activity android:name=".Activities.LifeCycleEventsActivity" />
+        <activity android:name=".IntentExtrasActivity"></activity>
     </application>
 
 </manifest>
