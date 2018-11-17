@@ -1,11 +1,13 @@
-package com.example.guillermoandres.myappusingkotlin
+package com.example.guillermoandres.myappusingkotlin.Activities
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.Toolbar
 import android.view.View
-import com.example.guillermoandres.myappusingkotlin.Activities.IntentsActivity
+import com.example.guillermoandres.myappusingkotlin.R
 import com.example.guillermoandres.myappusingkotlin.models.Student
+import com.example.guillermoandres.myappusingkotlin.others.ToolbarActivity
 import kotlinx.android.synthetic.main.activity_intent_extras.*
 
 
@@ -16,11 +18,27 @@ import kotlinx.android.synthetic.main.activity_intent_extras.*
  * Cada vez que se vaya a usar extensiones para llamar variables, hay que verificar que sea la
  * correcta
 */
-class IntentExtrasActivity : AppCompatActivity() {
+class IntentExtrasActivity : ToolbarActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intent_extras)
+
+        //Hay que saber de cual android kotlin extension se está llamando para no tener problemas
+        toolbarToLoad(toolbar as Toolbar)
+        enabledHomeDisplay(true)
+
+        /**
+         * Para poder trabajar la navegación, debemos ir al manifiest.xml y activar los metadatos
+         * en este caso se usa para esta activity. En el manifiest queda algo como esto:
+         * <activity android:name=".IntentExtrasActivity">
+              <meta-data android:name="android.support.PARENT_ACTIVITY"
+           android:value="com.example.guillermoandres.myappusingkotlin.MainActivity"></meta-data>
+        </activity>
+         para poder usar la linea que sigue a continuación
+         */
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         buttonBack.setOnClickListener{
             startActivity(Intent(this, IntentsActivity::class.java))

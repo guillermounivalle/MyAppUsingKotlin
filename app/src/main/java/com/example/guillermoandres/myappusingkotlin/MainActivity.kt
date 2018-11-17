@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.constraint.ConstraintLayout
 import android.support.design.widget.Snackbar
+import android.support.v7.widget.Toolbar
 import android.widget.Button
 import android.widget.Toast
 import com.example.guillermoandres.myappusingkotlin.Activities.AndroidExtensionsActivity
@@ -17,13 +18,19 @@ import com.example.guillermoandres.myappusingkotlin.Activities.PicassoActivity
 import com.example.guillermoandres.myappusingkotlin.Activities.SharedPreferences
 import com.example.guillermoandres.myappusingkotlin.Activities.LifeCyclesActivity
 import com.example.guillermoandres.myappusingkotlin.others.Functions
+import com.example.guillermoandres.myappusingkotlin.others.ToolbarActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ToolbarActivity() {
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        toolbarToLoad(toolbar as Toolbar) //Hay que castiarlo a Toolbar por que el toolbar que llega es un View
+        //enabledHomeDisplay(true)
 
         /*
         This classes are a learning of kotlin
