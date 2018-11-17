@@ -3,7 +3,6 @@ package com.example.guillermoandres.myappusingkotlin.Activities
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.example.guillermoandres.myappusingkotlin.IntentExtrasActivity
 import com.example.guillermoandres.myappusingkotlin.R
 import com.example.guillermoandres.myappusingkotlin.models.Student
 import kotlinx.android.synthetic.main.activity_intent.*
