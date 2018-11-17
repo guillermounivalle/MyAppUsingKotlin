@@ -1,6 +1,6 @@
 package com.example.guillermoandres.myappusingkotlin.Activities
 
-import android.support.v7.app.AppCompatActivity
+
 import android.os.Bundle
 import android.support.v7.widget.Toolbar
 import android.widget.Button
@@ -10,7 +10,7 @@ import com.example.guillermoandres.myappusingkotlin.others.ToolbarActivity
 
 //importar para usar Android Kotlin Extension
 import kotlinx.android.synthetic.main.activity_android_extensions.*
-import kotlinx.android.synthetic.main.activity_intent_extras.*
+
 
 class AndroidExtensionsActivity : ToolbarActivity() {
 

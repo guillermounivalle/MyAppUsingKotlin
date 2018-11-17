@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,14 +19,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.ClickEventeActivity" />
-        <activity android:name=".Activities.AndroidExtensionsActivity" />
+        <activity android:name=".Activities.ClickEventeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guillermoandres.myappusingkotlin.MainActivity" />
+        </activity>
+        <activity android:name=".Activities.AndroidExtensionsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guillermoandres.myappusingkotlin.MainActivity" />
+        </activity>
         <activity android:name=".Activities.PicassoActivity" />
-        <activity android:name=".Activities.ListViewActivity" />
+        <activity android:name=".Activities.ListViewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guillermoandres.myappusingkotlin.MainActivity" />
+        </activity>
         <activity android:name=".Activities.IntentsActivity" />
-        <activity android:name=".Activities.PermissionsActivity" />
+        <activity android:name=".Activities.PermissionsActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.guillermoandres.myappusingkotlin.MainActivity" />
+    </activity>
         <activity android:name=".Activities.SharedPreferences" />
-        <activity android:name=".Activities.ExtensionsFunctions" />
+        <activity android:name=".Activities.ExtensionsFunctions" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guillermoandres.myappusingkotlin.MainActivity" />
+        </activity>
         <activity android:name=".Activities.LifeCyclesActivity" />
         <activity android:name=".others.LifeCycleEventsActivity" />
         <activity android:name=".Activities.IntentExtrasActivity">
