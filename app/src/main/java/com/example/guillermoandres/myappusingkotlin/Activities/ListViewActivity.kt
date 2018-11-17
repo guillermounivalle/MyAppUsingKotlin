@@ -1,14 +1,15 @@
 package com.example.guillermoandres.myappusingkotlin.Activities
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.Toolbar
 import com.example.guillermoandres.myappusingkotlin.R
 import com.example.guillermoandres.myappusingkotlin.R.*
 import com.example.guillermoandres.myappusingkotlin.adapters.Person_Adapter
 import com.example.guillermoandres.myappusingkotlin.models.Person
+import com.example.guillermoandres.myappusingkotlin.others.ToolbarActivity
 import kotlinx.android.synthetic.main.activity_list_view.*
 
-class ListViewActivity : AppCompatActivity() {
+class ListViewActivity : ToolbarActivity() {
 
 
     private lateinit var adapter: Person_Adapter
@@ -18,10 +19,19 @@ class ListViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(layout.activity_list_view)
 
+
+        //Hay que saber de cual android kotlin extension se está llamando para no tener problemas
+        toolbarToLoad(toolbar as Toolbar)
+        enabledHomeDisplay(true)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
+
+
         personlist = getPersons()
         adapter = Person_Adapter(this, R.layout.list_view_person, personlist)
 
         listView.adapter = adapter
+
 
     }
 

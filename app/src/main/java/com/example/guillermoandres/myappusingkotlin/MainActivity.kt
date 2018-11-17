@@ -30,7 +30,7 @@ class MainActivity : ToolbarActivity() {
         setContentView(R.layout.activity_main)
 
         toolbarToLoad(toolbar as Toolbar) //Hay que castiarlo a Toolbar por que el toolbar que llega es un View
-        //enabledHomeDisplay(true)
+        enabledHomeDisplay(true)
 
         /*
         This classes are a learning of kotlin

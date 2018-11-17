@@ -3,14 +3,17 @@ package com.example.guillermoandres.myappusingkotlin.Activities
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.Toolbar
 import android.widget.ImageView
 import com.example.guillermoandres.myappusingkotlin.R
+import com.example.guillermoandres.myappusingkotlin.others.ToolbarActivity
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_intent_extras.*
 import kotlinx.android.synthetic.main.activity_picasso.*
 import java.lang.Exception
 
-class PicassoActivity : AppCompatActivity() {
+class PicassoActivity : ToolbarActivity() {
 
 
     //Primero debemos ir al gradel e incorporar la siguiente libreria: 'com.squareup.picasso:picasso:2.71828'
@@ -26,6 +29,10 @@ class PicassoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_picasso)
+
+        //Hay que saber de cual android kotlin extension se está llamando para no tener problemas
+        toolbarToLoad(toolbar as Toolbar)
+        enabledHomeDisplay(true)
 
         /**
          * RESOURCE LOADING

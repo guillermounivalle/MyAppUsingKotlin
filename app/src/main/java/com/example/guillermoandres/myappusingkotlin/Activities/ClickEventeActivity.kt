@@ -1,18 +1,27 @@
 package com.example.guillermoandres.myappusingkotlin.Activities
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.Toolbar
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.example.guillermoandres.myappusingkotlin.R
+import com.example.guillermoandres.myappusingkotlin.others.ToolbarActivity
+import kotlinx.android.synthetic.main.activity_click_evente.*
 
 
-class ClickEventeActivity : AppCompatActivity(), View.OnLongClickListener {
+class ClickEventeActivity : ToolbarActivity(), View.OnLongClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_click_evente)
+
+        //Hay que saber de cual android kotlin extension se está llamando para no tener problemas
+        toolbarToLoad(toolbar as Toolbar)
+        enabledHomeDisplay(true)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
+
 
         //Captura de botones
         val button1 = findViewById<Button>(R.id.buttonClickMulti1)
