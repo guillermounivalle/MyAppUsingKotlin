@@ -1,10 +1,10 @@
 package com.example.guillermoandres.myappusingkotlin.Activities
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.widget.Toast
 import com.example.guillermoandres.myappusingkotlin.R
+import com.example.guillermoandres.myappusingkotlin.others.LifeCycleEventsActivity
 
 class LifeCyclesActivity : LifeCycleEventsActivity() {
 

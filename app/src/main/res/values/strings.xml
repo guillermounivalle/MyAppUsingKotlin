@@ -9,6 +9,16 @@
     <string name="button_to_permissions">7. Ir a permissions</string>
     <string name="button_to_shared_preferences">8. Ir a Shared Preferences</string>
     <string name="button_to_Extensions_functions">9. Irt a Extensions functions</string>
-
+    <string name="button_ClicXML">Clickeado por XML</string>
+    <string name="button_Click_Line">Clickeado en linea</string>
+    <string name="button_Multi_1">Botón Múltiple 1</string>
+    <string name="button_Multi_2">Botón Múltiple 2</string>
+    <string name="button_Multi_3">Botón Múltiple 3</string>
+    <string name="button_kat_id">BUTTON FINDVIEWBYID</string>
+    <string name="button_kat_kat">BUTTON BY KAT</string>
+    <string name="button_intent_extras">Intent With Extras</string>
+    <string name="button_intent_flags">Intent With Flags</string>
+    <string name="button_intent_object">Intent With Object</string>
+    <string name="button_back">Go Back</string>
 
 </resources>
