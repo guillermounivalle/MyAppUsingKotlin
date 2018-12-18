@@ -8,6 +8,7 @@ import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.guillermoandres.myappusingkotlin.R
 import com.example.guillermoandres.myappusingkotlin.models.Person
+import com.example.guillermoandres.myappusingkotlin.others.inflate
 import kotlinx.android.synthetic.main.list_view_person.view.*
 
 
@@ -16,9 +17,14 @@ import kotlinx.android.synthetic.main.list_view_person.view.*
 //Luego totoma todos lo layous ya personalizados y los implementa en el listview.
 class Person_Adapter(val context: Context, val layout: Int, val list: List<Person>) :BaseAdapter(){
 
-    //mInflator lo que hace es habilitarnos poder tomar ese layout y usarlo con
+    /**
+     * Una vez realizamos en el extensionsFunctions la implementación del ViewGroup,
+     * Comentaré la linea del --> private val mInflator: LayoutInflater = LayoutInflater.from(context)
+     * ya que la extensiónFunctios nos permite llamarla de manera global
+     */
+     //mInflator lo que hace es habilitarnos poder tomar ese layout y usarlo con
     //los campos nuevos que se colocaron en el layout horizontal
-    private val mInflator: LayoutInflater = LayoutInflater.from(context)
+    //private val mInflator: LayoutInflater = LayoutInflater.from(context)
 
     //Retorna el item de la lista segùn la posiciòn que se le pase.
     override fun getItem(position: Int): Any {
@@ -50,7 +56,12 @@ class Person_Adapter(val context: Context, val layout: Int, val list: List<Perso
         //Innecesarias y haya un mayor perfomance, usamos el Viewhoder
         //Si no es nulo, se usa view.tag as PersonViewHolder para recuperar lo que se guardo cuando era nulo
         if(convertView == null){
-            view = mInflator.inflate(layout, parent, false)
+            /**
+             * La linea a continuación se comenta ya que al usar el ViewGroup de la extensions functions
+             * Editamos la linea de código para que quede mecho mas limpio
+             */
+            //view = mInflator.inflate(layout, parent, false)
+            view = parent.inflate(layout)
             viewHolder = PersonViewHolder(view)
             view.tag = viewHolder
         }else{
