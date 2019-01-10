@@ -32,6 +32,6 @@ class ExtensionsFunctions : ToolbarActivity() {
 
         button_LoadByUrl.setOnClickListener{ imageViewLoadedByUrl.loadByUrl("https://udemy-images.udemy.com/course/480x270/1325930_f5f6_3.jpg")}
 
-        button_GoToActivity.setOnClickListener{ goToActivity<MainActivity>()}}
+        button_GoToActivity.setOnClickListener{ goToActivity<MainActivity>()}
     }
 }
